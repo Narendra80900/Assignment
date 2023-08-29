@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="icon" href="Images/logo.jpg">
+    <title>Website Designing - HTML5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: #b4d3dd;
+    margin: 80px auto;
+    height: 570px;
+    width: 750px;
+    padding: 25px;
+}
+
+.contact-form h1 {
+    font-size: 23px;
+    FONT-WEIGHT: 600;
+    margin-bottom: 23px;
+}
+
+.contact-form .contact-form-part-1 {
+    display: flex;
+    background: white;
+    padding: 20px 13px;
+}
+
+.contact-form .contact-form-part-1 .part-1 {
+    width: 34%;
+    color: gray;
+    font-weight: 600;
+}
+
+.contact-form .contact-form-part-1 .part-1 h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.contact-form .contact-form-part-1 .part-1 p {
+    font-size: 15px;
+}
+
+.contact-form .contact-form-part-1 .part-2 {
+    font-weight: 600;
+    width: 38%;
+    padding-top: 23px;
+}
+
+.contact-form .contact-form-part-1 .part-2 .number1 {
+    margin-bottom: 2px;
+    color: #d44949;
+}
+
+.contact-form .contact-form-part-1 .part-2 .number1 span {
+    background: #d44949;
+    color: white;
+    font-size: 11px;
+    padding: 3px 3px 1px 3px;
+    border-radius: 3px;
+}
+
+.contact-form .contact-form-part-1 .part-2 .email1 {
+    margin-top: 2px;
+    color: darkturquoise;
+}
+
+.contact-form .contact-form-part-1 .part-2 .email1 span {
+    background: darkturquoise;
+    color: white;
+    font-size: 11px;
+    padding: 3px 3px 1px 3px;
+    border-radius: 3px;
+}
+
+.contact-form .contact-form-part-1 .part-3 {
+    margin: auto;
+}
+
+.contact-form .contact-form-part-1 .part-3 i {
+    font-size: 26px;
+    color: #d44949;
+    cursor: pointer;
+}
+
+.contact-form .contact-form-part-2 {
+    display: flex;
+    padding: 15px;
+    font-weight: 500;
+    background: white;
+    margin-top: 18px;
+}
+
+.contact-form .contact-form-part-2 .form input {
+    padding: 8px 5px;
+    margin: 5px 2px;
+}
+
+.contact-form .contact-form-part-2 .form textarea {
+    padding: 6px 23px 6px 6px;
+    margin: 10px 0px;
+}
+
+.contact-form .contact-form-part-2 .form button {
+    background: #d44949;
+    border: 2px solid transparent;
+    padding: 5px 9px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+.contact-form .contact-form-part-2 .map-erea {
+    padding: 5px;
+}
+
+.contact-form .contact-form-part-2 .map-erea .icons{
+    margin-top: 4px;
+}
+
+.contact-form .contact-form-part-2 .map-erea .icons i {
+    padding: 6px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+    </style>
+
+<body>
+
+    <div class="contact-form">
+        <h1>CONTACT US</h1>
+        <div class="contact-form-part-1">
+            <div class="part-1">
+                <h2>ADDRESS:</h2>
+                <p>jaimangal, Ahmedabad,<br>Gujrat-380001.</p>
+            </div>
+            <div class="part-2">
+                <p class="number1"><span><i class="fa-solid fa-phone"></i></span> +91 9327551850</p>
+                <p class="email1"><span><i class="fa-solid fa-envelope"></i></span> narendra1412@gmail.com</p>
+            </div>
+            <div class="part-3">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+        </div>
+        <div class="contact-form-part-2">
+            <form class="form">
+                <input type="text" placeholder="Name :" pattern="[a-zA-z]+" required title="Only letters...!">
+                <input type="text" placeholder="Company :" pattern="[a-zA-z]+" title="Only letters...!" required>
+                <input type="email" placeholder="Email :" required>
+                <input type="text" placeholder="Mobiile :" pattern="[0-9]+" maxlength="10"  title="Only Numbers...!" required>
+                <textarea name="" id="" cols="47" rows="5" placeholder="Message :"></textarea>
+                <button>Send</button>
+            </form>
+            <div class="map-erea">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179852.72393871524!2d72.49521910152514!3d23.005912515612607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1684297662603!5m2!1sen!2sin" width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
