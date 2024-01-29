@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ First name: <input type="text" id="Add"><br> 
+
+ <script type="text/javascript">
+ var x= [];
+
+ function changeText2(){
+var Add = document.getElementById('Add').value;
+document.getElementById('boldStuff2').innerHTML = Add;
+x.push(Add);
+document.getElementById('demo').innerHTML = x;
+ }
+ </script>
+
+ <p>Add: <b id='boldStuff2'></b> </p> 
+ <p> Other people's names: </p>
+ 
+ <ol>
+     <li id = "demo"> </li> 
+ </ol>
+
+ <input type='button' onclick='changeText2()'   value='Submit'/> 
+
+ </head>
+ <body>
+ </body>
+ </html>
